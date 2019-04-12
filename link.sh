@@ -1,0 +1,1 @@
+ln -s /Developer/NVIDIA/CUDA-10.1/lib/* /Users/Alexander/.rustup/toolchains/nightly-x86_64-apple-darwin/lib

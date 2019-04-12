@@ -1,0 +1,13 @@
+[package]
+name = "rust_cuda"
+version = "0.1.0"
+authors = ["MoonL1ght <ixav1@icloud.com>"]
+build = "build.rs"
+links = "cudart"
+
+[dependencies]
+libc = "0.2"
+rand = "0.5.5"
+
+[build-dependencies]
+cc = "1.0"
