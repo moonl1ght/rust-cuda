@@ -29,9 +29,8 @@ __global__ void dot__(float *v1, float *v2, float *res, int N) {
 
 float * gpu_dot (float *v1, float *v2, size_t N) {
 	float *dev_v1, *dev_v2, *dev_res, *res;
-
-	res = new float[blocksPerGrid];
-
+  res = new float[blocksPerGrid];
+  
 	cudaMalloc((void**)&dev_v1, N * sizeof(float));
   cudaMalloc((void**)&dev_v2, N * sizeof(float));
 	cudaMalloc((void**)&dev_res, blocksPerGrid * sizeof(float));
