@@ -19,7 +19,7 @@ __global__ void dot__(float *v1, float *v2, float *res, int N) {
       cache[cacheIndex] += cache[cacheIndex + i];
     }
     __syncthreads();
-    i /= 2;
+    i /= 2;   
   }
 
   if (cacheIndex == 0) {
